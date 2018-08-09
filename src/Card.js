@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 // class Card extends Component {
@@ -15,9 +15,9 @@ import React, { Component } from 'react';
 const Card = ({name, email, id}) => {
     // const {name, email, id} = props;
     return (
-        <div className='bg-light-purple dib br3 pa5 ma2 grow bw4 shadow-5'>
+        <div className='tc grow bg-light-green br3 pa3 ma2 dib bw2 shadow-5'>
             <img alt='hummer' src={`https://robohash.org/${id}?200x200`}/>
-            <div clasName='f1 tc'>
+            <div className='f1 tc'>
                 <h2>{name}</h2>
                 <p>{email}</p>
             </div>
